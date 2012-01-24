@@ -55,6 +55,8 @@ number like a real hardware or software dialer.
 
 If you're curious, you can debug the phone number processing like this:
 
+    ruby -rnt54 -e 'NT54::Parser.debug("02914445555")'
+
     D, [2012-01-24T15:29:00.993893 #10077] DEBUG -- : new state: Dialtone
     D, [2012-01-24T15:29:00.994076 #10077] DEBUG -- : got 0
     D, [2012-01-24T15:29:00.994209 #10077] DEBUG -- : triggering area_code_indicated
